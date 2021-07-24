@@ -1,23 +1,144 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="navbar__brand">
-          <img src="assets/logo.png" alt="brand_logo" class="navbar__logo">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar__brand">
+        <img src="assets/zomatologo.png" alt="brand_logo" class="navbar__logo">
+      </div>
+      <div class="navbar__nav__items">
+        <button type="button" class="nav__item button__primary">Order Food</button>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <!-- hero section -->
+    <section class="hero__container">
+      <div class="hero__image__container">
+        <img src="assets/hero.jpg" alt="" class="hero__image">
+        <div class="hero__image__container__bg">
+          <img src="assets/svg/heroShape.svg" alt="" class="hero__image__bg">
         </div>
-        <div class="navbar__nav__items">
-          <button type="button" class="nav__item">Order Food</button>
+        <div class="hero__image__container__bg__pattern">
+          <img src="assets/svg/herobgpattren.svg" alt="" class="hero__image__bg__pattern">
         </div>
-      </nav>
-    </header>
-  </body>
+      </div>
+      <div class="hero__description">
+        <h1 class="hero__text">
+          Order Food from favorite restaurants near you
+        </h1>
+        <button class="button__primary">Order Food</button>
+      </div>
+    </section>
+
+    <!-- Explore menu -->
+    <section class="explore__menu__container">
+      <h1 class="explore__menu__text">Explore our menu</h1>
+      <div class="explore__menu__gradient__bg">
+      </div>
+      <div class="explore__menu__lists">
+        <!-- Burger -->
+        <div class="food__card" id="burger__card">
+          <div class="food__card__image_container">
+            <img src="assets/burger.jpg" alt="burger" class="food__image">
+          </div>
+          <div class="food__card__description">
+            <h3 class="food__title">Burgers</h3>
+            <p>Burger King, McDonals, Burger Place <span style="color: #D83A56">+3</span></p>
+          </div>
+        </div>
+        <!-- Pizza -->
+        <div class="food__card" id="pizza__card">
+          <div class="food__card__image_container">
+            <img src="assets/pizza.jpg" alt="burger" class="food__image">
+          </div>
+          <div class="food__card__description">
+            <h3 class="food__title">Pizza</h3>
+            <p>Pizza Hut, Domino's Pizza <span style="color: #D83A56">+3</span></p>
+          </div>
+        </div>
+        <!-- Ice Cream -->
+        <div class="food__card" id="ice__cream__card">
+          <div class="food__card__image_container">
+            <img src="assets/iceCream.jpg" alt="burger" class="food__image">
+          </div>
+          <div class="food__card__description">
+            <h3 class="food__title">Ice Creams</h3>
+            <p>Baskin Robins, Ibaco, Havana <span style="color: #D83A56">+3</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="view__more">
+        <button class="view__more__button">View More</button>
+      </div>
+    </section>
+
+    <!-- Image Grid -->
+    <section class="image__grid__container">
+      <h1>Order from 100s of restaurants</h1>
+      <div class="image__grid">
+        <img src="assets/restaurant.jpg" alt="" class="image__grid__image1">
+        <img src="assets/restaurant1.jpg" alt="" class="image__grid__image2">
+        <img src="assets/restaurant3.jpg" alt="" class="image__grid__image3">
+        <img src="assets/restaurant4.jpg" alt="" class="image__grid__image4">
+      </div>
+
+    </section>
+
+    <!-- Stay Updated -->
+    <section class="stay__updated__container">
+      <h1>Stay Updated</h1>
+      <div class="stay__updated">
+        <div class="stay__updated__input__container">
+          <input type="email" placeholder="example@email.com" class="stay__updated__input">
+        </div>
+        <div class="stay__updated__button__container">
+          <button type="button" class="button__primary">Get Updates</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image with text -->
+    <section class="image__text__section">
+      <div class="quote__image__bg">
+      </div>
+      <div class="black__box__bg">
+
+      </div>
+      <div class="quote__text">
+        <h3>
+          "When a man's stomach is full it makes no difference whether he is rich
+          or poor."
+        </h3>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+    <footer class="footer__container">
+      <div class="footer__brand">
+        <img src="assets/zomatologo.png" alt="" class="footer__brand__logo">
+      </div>
+      <div class="footer__list">
+        <ul>
+          <li>Pricing</li>
+          <li>Terms and Condition</li>
+          <li>Partnership</li>
+          <li>Career</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </footer>
+</body>
+
 </html>
